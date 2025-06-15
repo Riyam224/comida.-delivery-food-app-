@@ -1,6 +1,8 @@
 // ignore_for_file: file_names, deprecated_member_use
 
+import 'package:comida_food_delivery_app/core/extras/app_constants.dart';
 import 'package:comida_food_delivery_app/core/routing/app_routes.dart';
+import 'package:comida_food_delivery_app/core/services/shared_pref.dart';
 import 'package:comida_food_delivery_app/core/theme/app_colors.dart';
 import 'package:comida_food_delivery_app/core/theme/app_styles.dart';
 import 'package:flutter/material.dart';
@@ -56,7 +58,7 @@ class PageviewItem extends StatelessWidget {
               ..rotateZ(-0.09),
 
             width: 1023.354,
-            height: 585.224,
+            height: 500.224,
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(image),
@@ -68,7 +70,7 @@ class PageviewItem extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 25.0),
             child: Text(text, style: TextStyles.onBoardingpage1),
           ),
-          SizedBox(height: 50),
+          SizedBox(height: 60),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -135,6 +137,14 @@ class PageviewItem extends StatelessWidget {
               ),
             ],
           ),
+          SizedBox(height: 30),
+          // todo skip with shared pref
+          GestureDetector(
+            onTap: () {
+              SharedPref.setBool(kIsOnboardingViewSeen, true);
+              GoRouter.of(context).go(AppRoutes.login);
+            },
+          ),
         ],
       ),
     );
@@ -165,7 +175,7 @@ class SecondOnboardingpage extends StatelessWidget {
               ..translate(0.0, 0.0)
               ..rotateZ(-0.09),
             width: double.infinity,
-            height: 500.44,
+            height: 430.224,
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(

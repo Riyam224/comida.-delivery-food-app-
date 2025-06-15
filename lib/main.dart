@@ -1,9 +1,13 @@
 import 'package:comida_food_delivery_app/core/routing/routes_generator.dart';
+import 'package:comida_food_delivery_app/core/services/shared_pref.dart';
 import 'package:comida_food_delivery_app/core/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() async {
+  // todo
+  WidgetsFlutterBinding.ensureInitialized();
+  await SharedPref.init();
   runApp(ComidaDeliveryFoodApp());
 }
 
