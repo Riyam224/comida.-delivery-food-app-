@@ -14,45 +14,17 @@ class TextStyles {
     height: 1.25,
   );
 
-  static TextStyle onBoardingtitle = GoogleFonts.inter(
-    fontSize: 32.sp,
-    fontWeight: FontWeight.w600,
-    color: AppColors.whiteColor,
-    fontStyle: FontStyle.normal,
-  );
-
-  static TextStyle onBoardingSubtitle = GoogleFonts.inter(
-    fontSize: 14.sp,
-    fontWeight: FontWeight.w400,
-    color: AppColors.whiteColor,
-    fontStyle: FontStyle.normal,
-  );
-
-  static TextStyle Inter14SemiBoldButton = GoogleFonts.inter(
-    fontSize: 14.sp,
-    fontWeight: FontWeight.w600,
-    color: AppColors.whiteColor,
-    fontStyle: FontStyle.normal,
-  );
-
-  static TextStyle Inter16SemiBold = GoogleFonts.inter(
-    fontSize: 16.sp,
-    fontWeight: FontWeight.w500,
+  static TextStyle onBoardingpage1 = GoogleFonts.poppins(
     color: AppColors.blackColor,
-    fontStyle: FontStyle.normal,
+    fontSize: 30.sp,
+    fontWeight: FontWeight.w700,
+    height: 1.22,
   );
 
-  static TextStyle Inter24SemiBoldWhite = GoogleFonts.inter(
-    fontSize: 16.sp,
-    fontWeight: FontWeight.w400,
-    color: AppColors.blackColor,
-    fontStyle: FontStyle.normal,
-  );
-
-  static TextStyle Inter16SemiBoldWhitedesc = GoogleFonts.inter(
-    fontSize: 16.sp,
-    fontWeight: FontWeight.w400,
-    color: AppColors.greyColor,
-    fontStyle: FontStyle.normal,
+  static TextStyle onBoardingpage2 = GoogleFonts.poppins(
+    color: AppColors.whiteColor,
+    fontSize: 30.sp,
+    fontWeight: FontWeight.w700,
+    height: 1.22,
   );
 }
